@@ -105,7 +105,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] xxs:w-full xs:bg-white bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -160,16 +160,16 @@ const Contact = () => {
           </button>
 
           <div className="mt-8 text-gray-200">
-            <div className="text-lg mb-4">Or contact me via:</div>
+            <div className="text-lg mb-4 underline xxs:text-center">Or contact me via:</div>
             <div className="flex flex-col gap-2">
-              <div className="flex items-center">
-                <span className="font-medium">Mobile:</span>
+              <div className="flex items-center xxs:flex-col">
+                <span className="font-medium xxs:text-[#8c5cf3]">Mobile <span className="xxs:hidden">:</span></span>
                 <a href="tel:+96181727922" className="text-white hover:underline ml-2">
                   +96181727922
                 </a>
               </div>
-              <div className="flex items-center">
-                <span className="font-medium">Email:</span>
+              <div className="flex items-center xxs:flex-col">
+                <span className="font-medium  xxs:text-[#8c5cf3]">Email<span className="xxs:hidden">:</span></span>
                 <a href="mailto:julianogharzo360@gmail.com" className="text-white hover:underline ml-2">
                   julianogharzo360@gmail.com
                 </a>
