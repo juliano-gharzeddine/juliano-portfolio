@@ -23,7 +23,7 @@ dist-ssr
 *.sw?
 
 .env
-/server/virtualenv
+server/virtualenv
 
 # vscode
 .vscode
