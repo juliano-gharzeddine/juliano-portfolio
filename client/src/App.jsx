@@ -10,7 +10,7 @@ const App = () => {
     const sendEmailForPrediction = async () => {
       try {
         // Make a POST request to the Flask API
-        const response = await axios.post("http://localhost:5000/predict", {
+        const response = await axios.post("/predict", {
           email: "Kindly attach the meeting minutes before end of shift", // The email content is sent as part of the body
         });
 
