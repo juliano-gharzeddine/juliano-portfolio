@@ -26,15 +26,24 @@ export const navLinks = [
   {
     id: "about",
     title: "About",
+    isOnHome: true
   },
   {
     id: "work",
     title: "Work",
+    isOnHome: true
   },
   {
     id: "contact",
     title: "Contact",
-  }
+    isOnHome: true
+  },
+  {
+    id: "spam-detection",
+    title: "Spam Detection",
+    isOnHome: false
+  },
+
 ];
 
 const services = [
@@ -267,6 +276,26 @@ const projects = [
         color: "pink-text-gradient",
       },
     ]
+  },
+  {
+    name: "Spam Detection",
+    description:
+      "This project highlights my work on the spam detection Machine Learning Model. It was trained on 90K records and can identify spam emails with 90% accuracy.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    redirectsTo: "spam-detection"
   },
 ];
 

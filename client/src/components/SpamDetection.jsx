@@ -61,7 +61,7 @@ const SpamDetection = () => {
     };
 
     return (
-        <div className={`xl:mt-12 flex justify-center items-center xl:flex-row flex-col-reverse gap-10 overflow-hidden h-full w-full select-none`}>
+        <div className={`xl:mt-12 xxs:mt-10 md:flex justify-center items-center xl:flex-row flex-col-reverse gap-10 overflow-hidden w-full`}>
             <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
                 className="bg-black-100 p-8 rounded-2xl w-full"
