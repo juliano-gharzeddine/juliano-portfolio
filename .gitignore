@@ -22,6 +22,9 @@ dist-ssr
 *.sln
 *.sw?
 
+/client/node_modules
+/client/dist
+
 .env
 server/virtualenv
 
