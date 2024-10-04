@@ -52,13 +52,14 @@ const ComputersCanvas = () => {
       camera={{ position: [14, 3, 14], fov: 25 }} // Updated camera position for maintaining distance
       gl={{ preserveDrawingBuffer: true }}
     >
-      <OrbitControls
-        enableZoom={false}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-      />
-      <Computers isMobile={isMobile} />
-
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <Computers isMobile={isMobile} />
+      </Suspense>
       <Preload all />
     </Canvas>
 
