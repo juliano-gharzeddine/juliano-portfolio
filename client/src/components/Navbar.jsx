@@ -62,7 +62,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === nav.title ? "text-[#915EFF]" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => handleNavClick(nav)}
             >
               {nav.isOnHome && location.pathname === "/" ? (
@@ -87,7 +87,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] text-[#8c5cf3] ${active === nav.title ? "text-white" : "text-secondary"}`}
+                  className={`font-poppins font-medium cursor-pointer text-[16px] text-[#8c5cf3] ${active === nav.title ? "text-[#915EFF]" : "text-secondary"}`}
                   onClick={() => {
                     setToggle(!toggle);
                     handleNavClick(nav);
