@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   index,
@@ -26,12 +27,7 @@ const ProjectCard = ({
       onClick={handleRedirect} // Redirect on click
       className="cursor-pointer" // Makes the whole card clickable
     >
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+      <div
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="mt-5">
@@ -49,7 +45,14 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+        {redirectsTo &&
+          <Link to={"/" + redirectsTo} >
+            <div className="mt-4 flex justify-center items-center p-2 w-full bg-[#915EFF] hover:bg-transparent hover:border-1 hover:border-[#915EFF] hover:border hover:text-[#915EFF] duration-300 ease rounded-md">
+              Try it Yourself
+            </div>
+          </Link>
+        }
+      </div>
     </motion.div>
   );
 };

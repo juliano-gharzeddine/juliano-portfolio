@@ -280,7 +280,7 @@ const projects = [
   {
     name: "Spam Detection",
     description:
-      "This project highlights my work on the spam detection Machine Learning Model. It was trained on 90K records and can identify spam emails with 90% accuracy.",
+      "This project highlights my work on the spam detection Machine Learning Model. It was trained on 90K records and can identify spam emails with over 90% accuracy.",
     tags: [
       {
         name: "reactjs",
