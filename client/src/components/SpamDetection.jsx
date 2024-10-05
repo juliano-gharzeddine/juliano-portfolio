@@ -47,7 +47,7 @@ const SpamDetection = () => {
 
         try {
             // Send a POST request to the spam detection API
-            const response = await axios.post("https://thingproxy.freeboard.io/fetch/http://backend.codewithjuliano.com:5000/api/predict", {
+            const response = await axios.post('https://backend.codewithjuliano.com/api/predict', {
                 email: emailContent,
             });
 
